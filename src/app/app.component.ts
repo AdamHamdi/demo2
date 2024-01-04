@@ -1,79 +1,53 @@
-import {Component, OnInit} from "@angular/core";
-import { JsonDataService } from "./main.service";
- 
-import { STATICUSERS_2 } from "src/fakeData_2";
-import { STATICUSERS } from "src/fakeData";
-import { Inventaire } from "./inventaire";
- 
- 
+import { Component, OnInit } from '@angular/core';
 
- 
+import { STATICUSERS_2 } from 'src/fakeData_2';
+import { STATICUSERS } from 'src/fakeData';
+import { Inventaire } from './models/inventaire';
 
 @Component({
-  selector: "pv-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"]
+  selector: 'pv-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
- 
+  visible: boolean = false;
   searchTerm: string = '';
-  
-  fakeData:any=STATICUSERS_2 
-  inventoryData: Inventaire[] = [];
   searchTerm2: string = '';
-  fakeData2:any=STATICUSERS 
+  displayedColumns: { header: string; body: string }[] = [
+    { header: 'Inventaire', body: 'ref_inventaire' },
+    { header: 'Num OI', body: 'num_oi' },
+    { header: 'Zone', body: 'zone_magasin' },
+    { header: 'Magasin', body: 'magasin' },
+    { header: 'Adresse', body: 'adresse' },
+    { header: 'Operateur', body: 'nom_util_oi' },
+  ];
+  displayedColumnsListe: { header: string; body: string }[] = [
+    { header: 'Opérateur', body: 'nom_util' },
+    { header: 'Libellé', body: 'libelle' },
+  ];
+  fakeData: Inventaire[] = STATICUSERS_2;
+  inventoryData: Inventaire[] = [];
   inventoryData2: Inventaire[] = [];
-  
-  constructor(private jsonDataService: JsonDataService) {}
+  fakeData2: { nom_util: string; libelle: string }[] = STATICUSERS;
+
+  constructor() {}
 
   ngOnInit(): void {
-    
-    if (this.fakeData && this.fakeData[0].results && this.fakeData[0].results.length > 0) {
-      
-      this.inventoryData = this.fakeData[0]?.results[0]?.items;
-      this.fakeData= this.fakeData[0]?.results[0]?.items;
-    } else {
-      console.error('Invalid JSON data structure');
-    }
-    
-    if (this.fakeData2 && this.fakeData2[0].results && this.fakeData2[0].results.length > 0) {
-      
-      this.inventoryData2 = this.fakeData2[0]?.results[0]?.items;
-      this.fakeData2= this.fakeData2[0]?.results[0]?.items;
-    } else {
-      console.error('Invalid JSON data structure');
-    }
+    this.inventoryData = JSON.parse(JSON.stringify(this.fakeData));
+    this.inventoryData2 = JSON.parse(JSON.stringify(this.fakeData2));
   }
- 
-  filterElement(){
-    this.fakeData = this.inventoryData.filter(item =>
-      Object.values(item).some(value => value && value.toString().toLowerCase().includes(this.searchTerm.toLowerCase()))
-    );
-    console.log('tableau',this.fakeData);
+
+  filterElement() {
+    this.fakeData = this.inventoryData.filter((inventory) => {
+      return Object.values(inventory).some(
+        (value) =>
+          value &&
+          value.toString().toLowerCase().includes(this.searchTerm.toLowerCase())
+      );
+    });
   }
-  filterElement2(){
-    this.fakeData2 = this.inventoryData2.filter(item =>
-      Object.values(item).some(value => value && value.toString().toLowerCase().includes(this.searchTerm2.toLowerCase()))
-    );
-    console.log('tableau',this.fakeData2);
-  }
-   //Filter List
-   filterElementChange(event:any){
-    console.log('event',event.target.value);
-    this.fakeData=this.inventoryData.filter((el:Inventaire)=>{
-      return el.ref_inventaire.toLowerCase().includes(event.target.value.toLowerCase()) //title (en miniscule) est ce qu'il contient ce qui est ecrit dans l'input (en miniscule)
-    })
-    console.log('tableau',this.fakeData);
-  }
-  visible: boolean = false;
 
   showDialog() {
-      this.visible = true;
+    this.visible = true;
   }
-  toggleAllRows(checked: boolean) {
-    this.fakeData.forEach((row: { selected: boolean; }) => (row.selected = checked));
-    console.log("selected", this.fakeData);
-    
-  }
- 
 }

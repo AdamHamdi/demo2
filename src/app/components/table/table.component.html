@@ -1,0 +1,46 @@
+<p-table
+  [value]="dataTable"
+  [tableStyle]="{ 'min-width': '50rem' }"
+  [paginator]="pagination"
+  [rows]="10"
+  [totalRecords]="dataTable.length"
+>
+  <ng-template pTemplate="header">
+    <tr>
+      <th rowspan="2">
+        <p-tableHeaderCheckbox *ngIf="showCheckbox"></p-tableHeaderCheckbox>
+      </th>
+      <th
+        *ngFor="let column of displayedColumns"
+        [pSortableColumn]="column.body"
+      >
+        {{ column.header }} <p-sortIcon [field]="column.body"></p-sortIcon>
+      </th>
+    </tr>
+    <tr>
+      <th *ngFor="let column of displayedColumns">
+        <span class="content">Contient</span>
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-inventory>
+    <tr>
+      <td>
+        <p-tableCheckbox [value]="inventory"></p-tableCheckbox>
+      </td>
+      <ng-container *ngFor="let column of displayedColumns">
+        <td>{{ inventory[column.body] }}</td>
+      </ng-container>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="footer" *ngIf="showTotal">
+    <tr>
+      <td></td>
+      <td colspan="2" class="text-right">Totals</td>
+      <td>--</td>
+      <td>--</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </ng-template>
+</p-table>
