@@ -1,0 +1,169 @@
+@import '~@ng-select/ng-select/themes/default.theme.css';
+.ng-select {
+  width: 100%;
+  padding-bottom: 0 !important;
+  .ng-select-container {
+    min-height: calc(1.69rem + 12px) !important;
+    max-height: calc(1.69rem + 12px) !important;
+    border-radius: 0.25rem !important;
+    border-radius: 0 !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    border: 1px solid #ddd;
+    background-color: $input;
+    display: flex;
+    align-items: center;
+    .ng-arrow-wrapper,
+    .ng-clear-wrapper {
+      align-self: flex-end;
+      bottom: 8px !important;
+    }
+    &::after {
+      position: relative !important;
+      border-bottom: 1px solid $border-input;
+    }
+    .ng-value-container {
+      padding: 0 !important;
+      border: 5px solid transparent !important;
+      border-left: 0px solid transparent !important;
+      .ng-value-icon {
+        display: none !important;
+      }
+      .ng-value {
+        background-color: $col-purple-1 !important;
+        color: $col-w !important;
+        padding: 1px 5px !important;
+        border-radius: 4px !important;
+        margin-left: 5px !important;
+        margin-bottom: 0px !important;
+        font-size: 12px !important;
+        .ng-value-label {
+          font-size: 12px !important;
+        }
+      }
+    }
+    input {
+      height: 100% !important;
+    }
+  }
+}
+
+.Em_select {
+  .ng-select-container {
+    min-height: calc(1.69rem + 12px) !important;
+    max-height: calc(1.69rem + 12px) !important;
+    border-radius: 0.25rem !important;
+    border: 1px solid #ddd;
+    background-color: $input;
+    display: flex;
+    align-items: center;
+    &::after {
+      position: relative !important;
+      border-bottom: 1px solid $border-input;
+    }
+    .ng-value-container {
+      padding: 0 !important;
+      border: 5px solid transparent !important;
+      border-left: 0px solid transparent !important;
+      .ng-value-icon {
+        display: none !important;
+      }
+      .ng-value {
+        background-color: transparent !important;
+        color: $col-B !important;
+        opacity: 0.8;
+        padding: 3px 5px !important;
+        font-size: 12px;
+        border-radius: 4px !important;
+      }
+    }
+    .ng-clear-wrapper {
+      display: none;
+    }
+    input {
+      height: 100% !important;
+    }
+  }
+}
+
+.ng-dropdown-panel {
+  .ng-option {
+    border-bottom: 1px solid $gris-btn;
+  }
+  .ng-dropdown-panel-items {
+    border-bottom: 1px solid $gris-btn;
+    .ng-option.ng-option-selected {
+      background-color: $col-purple-1 !important;
+      color: $col-w !important;
+      position: relative;
+      padding-left: 20px;
+    }
+    .ng-option.ng-option-selected.ng-option-marked {
+      background-color: $col-purple-1 !important;
+      color: $col-w !important;
+    }
+    .ng-option.ng-option-marked {
+      &:hover {
+        background-color: $col-purple-1;
+        color: $col-w;
+      }
+    }
+  }
+}
+
+.ng-select.ng-select-focused:not(.ng-select-opened) > .ng-select-container {
+  border-color: $border-input !important;
+}
+
+.select-input-table.ng-touched.ng-invalid {
+  border: 1px solid red !important;
+  border-radius: 10px !important;
+}
+
+.ng-select-truncate {
+  display: inline-block;
+  padding: 1px 5px;
+  white-space: nowrap;
+  max-width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.truncate-destination {
+  display: inline-block;
+  padding: 1px 5px;
+  white-space: nowrap;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.truncate-dest-first-item {
+  display: inline-block;
+  padding: 1px 5px;
+  white-space: nowrap;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.first-item-truncate {
+  display: inline-block;
+  padding: 1px 5px;
+  white-space: nowrap;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.select-input-table {
+  .ng-select-container {
+    min-height: 33px !important;
+    max-height: 33px !important;
+    border-radius: 0.25rem !important;
+    border-radius: 10px !important;
+    background-color: #edf0ff !important;
+    .ng-arrow-wrapper {
+      align-self: flex-end;
+      bottom: 5px !important;
+    }
+  }
+}

@@ -1,0 +1,158 @@
+.data-table {
+  overflow: auto;
+  box-shadow: -3px 2px 12px rgb(0 0 0 / 9%) !important;
+  .check-table {
+    .mat-checkbox-frame {
+      border-color: $col-w;
+      border-width: 1.5px;
+    }
+  }
+
+  .Gl-table th.mat-header-cell:first-of-type,
+  .Gl-table td.mat-cell:first-of-type,
+  .Gl-table td.mat-footer-cell:first-of-type {
+    width: 40px;
+  }
+  .col-icon-module {
+    width: 70px;
+    .icon-module {
+      position: relative;
+      top: 3px;
+    }
+  }
+  thead {
+    background: $col-gris;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    tr.mat-header-row {
+      height: 38px;
+      .mat-header-cell {
+        color: $col-w;
+        padding: 0 10px !important;
+        &:first-child {
+          border-top-left-radius: 11px;
+          border-bottom-left-radius: 11px;
+        }
+        &:last-child {
+          border-top-right-radius: 11px;
+          border-bottom-right-radius: 11px;
+        }
+      }
+    }
+  }
+  td {
+    padding: 5px 10px !important;
+  }
+}
+
+.thead-permission {
+  background: $col-red !important;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+}
+
+.permission-table-container {
+  max-height: 600px;
+}
+
+.table-permission {
+  border-collapse: collapse;
+  tr {
+    height: 38px;
+    th {
+      text-align: left;
+      color: $col-w;
+      width: 40px;
+      padding-left: 15px;
+      &:first-child {
+        border-top-left-radius: 11px;
+        border-bottom-left-radius: 11px;
+      }
+      &:last-child {
+        border-top-right-radius: 11px;
+        border-bottom-right-radius: 11px;
+      }
+    }
+    td {
+      padding-left: 15px;
+      font-weight: 600;
+      border-bottom: 1px solid #0000001f;
+    }
+  }
+}
+
+.pagination-table {
+  mat-paginator {
+    background: $col-w;
+    width: 500px;
+    height: 45px;
+    border-radius: 5px;
+    box-shadow: -3px 2px 12px rgb(0 0 0 / 9%) !important;
+  }
+  .mat-paginator-page-size-label {
+    display: none;
+  }
+}
+
+.stat {
+  width: 150px;
+  height: 30px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.stat-01 {
+  color: $col-stat-1;
+  background: $col-stat-2;
+}
+
+.stat-02 {
+  color: $col-stat-3;
+  background: $col-stat-4;
+}
+
+.stat-03 {
+  color: $col-stat-5;
+  background: $col-stat-6;
+}
+
+.content-more-option {
+  width: max-content;
+  height: 40px;
+  background: $col-w;
+  box-shadow: -3px 2px 12px rgb(0 0 0 / 9%);
+  position: absolute;
+  top: 0;
+  right: 35px;
+  border-radius: 10px;
+}
+
+.inputs-table {
+  .form-control {
+    height: 34px !important;
+  }
+  td,
+  th {
+    padding: 8px 15px !important;
+  }
+}
+
+.cdk-column-sendMail {
+  width: 5% !important;
+}
+
+.isActive {
+  color: $col-stat-1;
+  font-weight: bold;
+}
+
+.inActive {
+  color: $col-chart-3;
+  font-weight: bold;
+}
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: $col-bleu-2 !important;
+}

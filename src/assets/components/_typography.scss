@@ -1,0 +1,50 @@
+.titre-card {
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $col-B;
+    line-height: 1.25;
+    @media #{$lt-sm} {
+        font-size: 25px;
+    }
+}
+
+.text-regular {
+    font-weight: 400;
+}
+
+.text-semibold {
+    font-weight: 600;
+}
+
+.fz-13 {
+    font-size: 13px;
+}
+
+.fz-16 {
+    font-size: 16px;
+}
+
+.fz-18 {
+    font-size: 18px;
+}
+
+.fz-19 {
+    font-size: 19px !important;
+}
+
+.fz-20 {
+    font-size: 20px !important;
+}
+
+.fz-21 {
+    font-size: 21px !important;
+}
+
+.fz-22 {
+    font-size: 22px !important;
+}
+
+.fz-23 {
+    font-size: 23px !important;
+}

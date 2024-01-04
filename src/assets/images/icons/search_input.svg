@@ -1,0 +1,6 @@
+<svg id="search_input" xmlns="http://www.w3.org/2000/svg" width="15.745" height="15.745" viewBox="0 0 15.745 15.745">
+  <g id="ic_Search">
+    <path id="Path" d="M0,0H15.745V15.745H0Z" fill="none"/>
+    <path id="Combined_Shape" data-name="Combined Shape" d="M12.252,12.921,9.909,10.579A6.006,6.006,0,0,1,0,6.009,6.008,6.008,0,1,1,10.809,9.623l2.371,2.371a.663.663,0,0,1-.469,1.132A.64.64,0,0,1,12.252,12.921ZM2.685,2.688A4.7,4.7,0,1,0,6.006,1.313,4.7,4.7,0,0,0,2.685,2.688Z" transform="translate(1.315 1.312)" fill="#fff"/>
+  </g>
+</svg>

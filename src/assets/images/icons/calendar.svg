@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.038" height="16.038" viewBox="0 0 16.038 16.038">
+  <g id="calendar" transform="translate(0.65 0.65)">
+    <rect id="Rectangle_452" data-name="Rectangle 452" width="14.738" height="13.605" rx="2" transform="translate(0 1.134)" fill="none" stroke="#92929d" stroke-linejoin="round" stroke-width="1.3"/>
+    <circle id="Ellipse_139" data-name="Ellipse 139" cx="0.85" cy="0.85" r="0.85" transform="translate(7.936 5.669)" fill="#92929d"/>
+    <circle id="Ellipse_140" data-name="Ellipse 140" cx="0.85" cy="0.85" r="0.85" transform="translate(10.77 5.669)" fill="#92929d"/>
+    <circle id="Ellipse_141" data-name="Ellipse 141" cx="0.85" cy="0.85" r="0.85" transform="translate(7.936 8.503)" fill="#92929d"/>
+    <circle id="Ellipse_142" data-name="Ellipse 142" cx="0.85" cy="0.85" r="0.85" transform="translate(10.77 8.503)" fill="#92929d"/>
+    <circle id="Ellipse_143" data-name="Ellipse 143" cx="0.85" cy="0.85" r="0.85" transform="translate(2.267 8.503)" fill="#92929d"/>
+    <circle id="Ellipse_144" data-name="Ellipse 144" cx="0.85" cy="0.85" r="0.85" transform="translate(5.102 8.503)" fill="#92929d"/>
+    <circle id="Ellipse_145" data-name="Ellipse 145" cx="0.85" cy="0.85" r="0.85" transform="translate(2.267 11.337)" fill="#92929d"/>
+    <circle id="Ellipse_146" data-name="Ellipse 146" cx="0.85" cy="0.85" r="0.85" transform="translate(5.102 11.337)" fill="#92929d"/>
+    <circle id="Ellipse_147" data-name="Ellipse 147" cx="0.85" cy="0.85" r="0.85" transform="translate(7.936 11.337)" fill="#92929d"/>
+    <line id="Ligne_85" data-name="Ligne 85" y2="1.134" transform="translate(2.834)" fill="none" stroke="#92929d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+    <line id="Ligne_86" data-name="Ligne 86" y2="1.134" transform="translate(11.904)" fill="none" stroke="#92929d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+    <line id="Ligne_87" data-name="Ligne 87" x1="14.738" transform="translate(0 3.968)" fill="none" stroke="#92929d" stroke-linejoin="round" stroke-width="1.3"/>
+  </g>
+</svg>

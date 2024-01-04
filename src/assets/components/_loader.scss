@@ -1,0 +1,65 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.loading span {
+    position: relative;
+    display: inline-block;
+    font-size: 69px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+.a {
+    color: #7392e9;
+}
+
+.s {
+    color: #4a72e0;
+}
+
+.e {
+    color: #3d5fba;
+}
+
+.c {
+    color: #283e7a;
+}
+
+.n {
+    color: #3d5fba;
+}
+
+.a1 {
+    color: #4a72e0;
+}
+
+.dot-1 {
+    color: #7392e9;
+}
+
+.dot-2 {
+    color: #4a72e0;
+}
+
+.dot-3 {
+    color: #283e7a;
+}
+
+@keyframes flip {
+    0%,
+    80% {
+        transform: rotateY(360deg);
+    }
+}

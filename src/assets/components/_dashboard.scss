@@ -1,0 +1,225 @@
+.dashboard {
+    position: relative;
+    min-height: 239px !important;
+    width: 100%;
+    background: url('../../assets/images/dash2.png') no-repeat center center/cover;
+    border-radius: 10px !important;
+    .titre-card-dash {
+        font-size: 28px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: $col-w;
+        line-height: 1.25;
+        @media #{$lt-sm} {
+            font-size: 25px;
+        }
+    }
+    .dash-search-content {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 47px;
+        border-left: 1px solid lightgray;
+    }
+    .select-dash {
+        .ng-select-container {
+            min-height: calc(1.3rem + 12px) !important;
+            max-height: calc(1.3rem + 12px) !important;
+            @media #{$lt-sm} {
+                min-height: calc(1.8rem + 12px) !important;
+                max-height: calc(1.8rem + 12px) !important;
+            }
+            border-radius: 0.25rem !important;
+            background-color: rgba(255,
+            255,
+            255,
+            0.3);
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            &::after {
+                position: relative !important;
+                border-bottom: 1px solid $border-input;
+            }
+            .ng-value-container {
+                padding: 0 !important;
+                border: 5px solid transparent !important;
+                border-left: 0px solid transparent !important;
+                .ng-value-icon {
+                    display: none !important;
+                }
+                .ng-value {
+                    background-color: transparent !important;
+                    color: $col-w !important;
+                    font-size: 12px;
+                    opacity: 0.8;
+                    padding: 3px 5px !important;
+                    font-family: Roboto, 'Helvetica Neue', sans-serif;
+                    border-radius: 4px !important;
+                }
+            }
+            .ng-clear-wrapper,
+            .ng-arrow-wrapper .ng-arrow {
+                color: $col-w !important;
+            }
+            .ng-clear-wrapper:hover .ng-clear {
+                color: $col-w !important;
+            }
+            .ng-clear-wrapper,
+            .ng-arrow-wrapper {
+                bottom: 6px !important;
+            }
+            .ng-arrow-wrapper:hover .ng-arrow {
+                border-top-color: $col-w !important;
+            }
+            input {
+                height: 100% !important;
+            }
+        }
+    }
+}
+
+.type-graph-select {
+    .ng-select-container {
+        min-height: calc(1.69rem + 12px) !important;
+        max-height: calc(1.69rem + 12px) !important;
+        border-radius: 0.25rem !important;
+        border: 1px solid $border-card !important;
+        background-color: $input;
+        display: flex;
+        align-items: center;
+        &::after {
+            position: relative !important;
+            border-bottom: 1px solid $border-input;
+        }
+    }
+}
+
+.search-select {
+    .ng-select-container {
+        min-height: calc(1.69rem + 12px) !important;
+        max-height: calc(1.69rem + 12px) !important;
+        border-radius: 0.25rem !important;
+        border: 1px solid $col-w !important;
+        background-color: $input;
+        display: flex;
+        align-items: center;
+        &::after {
+            position: relative !important;
+            border-bottom: 1px solid $border-input;
+        }
+        .ng-value-container {
+            padding: 0 !important;
+            border: 5px solid transparent !important;
+            border-left: 0px solid transparent !important;
+            .ng-value-icon {
+                display: none !important;
+            }
+            .ng-value {
+                background-color: transparent !important;
+                color: $col-B !important;
+                opacity: 0.8;
+                padding: 3px 5px !important;
+                font-family: Roboto, 'Helvetica Neue', sans-serif;
+                border-radius: 4px !important;
+            }
+        }
+        .ng-clear-wrapper {
+            display: none;
+        }
+        input {
+            height: 100% !important;
+        }
+    }
+}
+
+.chart-select {
+    .ng-select-container {
+        border-color: transparent transparent transparent !important;
+        border: 1px solid $border-input;
+        border-radius: 25px !important;
+    }
+    .ng-dropdown-panel-items {
+        .ng-option {
+            border-radius: 0px !important;
+        }
+    }
+}
+
+.stat-card {
+    min-height: 239px;
+}
+
+.grp-chart {
+    box-shadow: 1px 8px 23px rgb(0 0 0 / 11%) !important;
+    border-radius: 0.8rem !important;
+    height: auto !important;
+    .form-control-chart {
+        border-radius: 0.8rem !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        border: 1px solid #e2e3e4 !important;
+    }
+    .form-control-filter {
+        border-radius: 0.8rem !important;
+        border: 1px solid #e2e3e4 !important;
+    }
+    .append-chart {
+        border-radius: 0 0.8rem 0.8rem 0 !important;
+        border: 1px solid #e2e3e4 !important;
+        border-left: 1px solid transparent !important;
+        padding: 3px 0;
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .input-group {
+        input {
+            border: 1px solid #e4e4f4 !important;
+        }
+        .input-group-append {
+            border: 1px solid #e4e4f4 !important;
+        }
+    }
+}
+
+.btn-filtre {
+    width: 38px !important;
+    min-width: 38px !important;
+    height: 38px !important;
+    padding: 0 !important;
+    border-radius: 10px !important;
+    background-color: $col-w;
+    box-shadow: 1px 8px 23px rgb(0 0 0 / 11%) !important;
+    .material-icons {
+        color: $col-purple-1;
+    }
+}
+
+.btn-train {
+    width: 56px !important;
+    min-width: 56px !important;
+    height: 56px !important;
+    padding: 0 !important;
+    border-radius: 10px !important;
+    background: #d3f3e1;
+    box-shadow: 1px 8px 23px rgb(0 0 0 / 11%) !important;
+}
+
+.opacity-6 {
+    opacity: 0.6;
+}
+
+.opacity-7 {
+    opacity: 0.7;
+}
+
+.opacty-8 {
+    opacity: 0.8;
+}
+
+.dash-badge {
+    padding: 8px 7px;
+    border-radius: 50%;
+}

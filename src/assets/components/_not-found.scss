@@ -1,0 +1,46 @@
+.not-found {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .f_404 {
+        width: 500px;
+        height: 500px;
+    }
+    #btn-not-found {
+        background: #2c447d;
+        color: white;
+        border-radius: 25px !important;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin: 4vh 0 4vh 2vh;
+        padding: 6px 30px;
+    }
+}
+
+.empty {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    .nothing-to-show {
+        width: 150px;
+    }
+    span {
+        font-size: 16px;
+        color: #2c447d;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+}
+
+.nothing-to-show {
+    height: 365px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media(max-width: 599px) {
+        height: fit-content!important;
+    }
+}

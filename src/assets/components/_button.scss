@@ -1,0 +1,173 @@
+.btn-bleu-1 {
+  background: $col-purple-1;
+  color: $col-w;
+}
+
+.btn-bleu-2 {
+  background: $col-bleu-2;
+  color: $col-w;
+}
+
+.btn-right {
+  position: absolute !important;
+  right: 0;
+  top: 0;
+}
+
+.btn-option {
+  width: 38px !important;
+  min-width: 38px !important;
+  height: 38px !important;
+  background: $col-purple-1;
+  padding: 0 !important;
+  border-radius: 10px !important;
+}
+
+.btn-action {
+  background: $col-purple-1;
+  color: $col-w;
+  border-radius: 10px !important;
+  min-width: 110px !important;
+  padding: 0 10px !important;
+  display: flex !important;
+}
+
+.btn-add {
+  background: $col-stat-1;
+  color: #ffffff;
+  border-radius: 10px !important;
+  width: 30px !important;
+  line-height: 32px;
+  height: 30px;
+  min-width: 30px !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-action-filter {
+  background: $col-purple-1;
+  color: $col-w;
+  border-radius: 10px !important;
+  padding: 0 12px !important;
+  display: flex !important;
+  font-size: 12px;
+}
+
+.btn-card-filter {
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+  background: $col-bleu-2;
+  padding: 0 !important;
+  border-radius: 10px !important;
+}
+
+.btn-card-liste {
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+  background: $gris-btn;
+  padding: 0 !important;
+  border-radius: 10px !important;
+  .badge-liste {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: $col-ind-1;
+    color: $col-w;
+    top: -7px;
+    right: -7px;
+    font-size: 12px;
+  }
+}
+
+.btn-option-filter {
+  color: $text-gris;
+}
+
+.btn-more {
+  color: $col-gris;
+}
+
+.group-search-mobile {
+  position: fixed;
+  width: 92%;
+  left: 0px;
+  top: 70px;
+  background: $col-w;
+  border-radius: 5px;
+  box-shadow: -3px 2px 12px rgb(0 0 0 / 9%) !important;
+  z-index: 9;
+  padding: 5px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.25s;
+  .btn-right {
+    right: 25px;
+  }
+}
+
+.open-search {
+  top: -70px;
+}
+
+button {
+  border-radius: 10px !important;
+}
+
+.btn-danger {
+  background-color: $col-red !important;
+  color: $col-w;
+}
+
+.mat-card-actions .mat-button,
+.mat-card-actions .mat-raised-button,
+.mat-card-actions .mat-stroked-button {
+  margin: 0 4px 8px !important;
+}
+
+.btn-export {
+  background-color: #df0555;
+  border-radius: 10px !important;
+  padding: 0 15px !important;
+  color: $col-w;
+}
+
+.btn-input-table {
+  background-color: #b80925;
+  border-radius: 50% !important;
+  width: 30px !important;
+  height: 30px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  .mat-icon {
+    font-size: 19px;
+  }
+}
+
+#btn-export-xls {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 1000;
+}
+
+.btn-ajouter-rep {
+  background-color: $btn-add;
+}
+
+.btn-delete-rep {
+  background-color: $bg-danger;
+}
+
+.btn-ajouter-rep,
+.btn-delete-rep {
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 9px !important;
+  cursor: pointer;
+}

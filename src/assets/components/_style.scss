@@ -1,0 +1,40 @@
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+.mat-menu-panel {
+  min-height: initial !important;
+  .mat-menu-content {
+    padding: 0 !important;
+  }
+}
+.side-option-sm {
+  width: 70px;
+  height: calc(100vh - 160px);
+  background: white;
+  border-radius: 15px;
+  box-shadow: -3px 2px 12px rgb(0 0 0 / 9%) !important;
+}
+.content-side-option {
+  position: fixed;
+  right: -450px;
+  height: 100%;
+  background: $col-w;
+  width: 450px;
+  max-width: 450px !important;
+  box-shadow: -3px 2px 12px rgb(0 0 0 / 9%) !important;
+  transition: all 0.5s;
+  -webkit-transition: all 0.25s;
+}
+.open-side {
+  right: 0;
+}
+.open-option {
+  width: 0;
+  overflow: hidden;
+}
+.btn-brouillon {
+  &:hover,
+  &.active {
+    background-color: $col-stat-1;
+  }
+}

@@ -1,0 +1,54 @@
+<div class="container p-5">
+  <div class="row">
+<div class="col-6 d-flex">
+    <input type="text" class="form-control mx-2" style="width: 300px;" [(ngModel)]="searchTerm"(input)="filterElementChange($event)" placeholder="Rechercher..." >
+    <button class="btn btn-secondary mx-2" (click)="filterElement()">Search</button> 
+    <button (click)="showDialog()"  class="btn btn-warning" label="Show"> Liste</button></div>
+  </div>
+<table class="table table-bordered mt-3">
+    <thead>
+      <tr>
+        <th><input type="checkbox"   name="" id=""></th>
+        <th>Inventaire</th>
+        <th>Num OI</th>
+        <th>Zone</th>
+        <th>Magasin</th>
+        <th>Adresse</th>
+        <th>Operateur</th>
+      </tr>
+    </thead>
+   
+    <tbody>
+        <tr *ngFor="let item of fakeData">
+
+            <td><input type="checkbox" [(ngModel)]="item.selected" name="" id=""></td>
+            <td>{{ item.ref_inventaire }}</td>
+            <td>{{ item.num_oi }}</td>
+            <td>{{ item.zone_magasin }}</td>
+            <td>{{ item.magasin }}</td>
+            <td>{{ item.adresse }}</td>
+            <td>{{ item.nom_util_oi }}</td>
+          </tr>
+    </tbody>
+  </table>
+  
+
+</div>
+
+<p-dialog header="Liste des opérateurs" [(visible)]="visible" [modal]="true" [style]="{ width: '50vw' }" [draggable]="false" >
+  <table class="table table-bordered mt-3">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Libelle</th> 
+      </tr>
+    </thead> 
+    <tbody>
+        <tr *ngFor="let item of fakeData2">
+            <td>{{ item.nom_util }}</td>
+            <td>{{ item.libelle }}</td>
+           
+          </tr>
+    </tbody>
+  </table>
+</p-dialog>

@@ -1,0 +1,18 @@
+.content-login {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/bg_login.png);
+    background-size: cover;
+    .card-login {
+        min-width: 500px;
+        min-height: 600px;
+        .titre-login {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            margin: auto;
+            color: $col-purple-1;
+        }
+    }
+}
